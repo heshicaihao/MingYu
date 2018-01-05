@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/t_menuimg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:background="@drawable/t_titlebg"
+            android:padding="13dp"
+            android:src="@drawable/t_log" />
+
+        <LinearLayout
+            android:id="@+id/menu_Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/t_menuredbar_"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:src="@drawable/t_menuorder" />
+
+            <TextView
+                style="@style/NEW_TitleTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="客房预订" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/menu_SpecialOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_specialoff" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="优惠精选" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_Dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_dinnner" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="餐饮美食" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_News"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_news" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="最新资讯" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_About"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_mingyu" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="关于明宇" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mingyuhui"
+                style="@style/TitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#878b8c"
+                android:padding="10dp"
+                android:text="明宇会"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/menu_Login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_login" />
+
+                <TextView
+                    android:id="@+id/login"
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="登录" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_MyOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_myorder" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="我的预订" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_Opinion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#e4e4e4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_opinion" />
+
+                <TextView
+                    style="@style/TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="意见反馈" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efecec"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_functionbar" />
+
+    <TextView
+        android:id="@+id/gs_Code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        style="@style/MingYuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/slide_menu" />
+    </LinearLayout>
+
+</LinearLayout>

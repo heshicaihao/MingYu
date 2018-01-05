@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:staggered="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efecec"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_functionbar" />
+
+    <LinearLayout
+        android:id="@+id/gift_class"
+        style="@style/MingYuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:weightSum="10" >
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/title_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/gift_more" >
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/code_RL"
+        style="@style/MingYuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="积分范围" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/code_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/right_arrow"
+            android:text="不限" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_keyWord"
+        style="@style/MingYuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关键字" />
+
+        <EditText
+            android:id="@+id/onOrder_KeyWord"
+            style="@style/ContentEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="例如：枕头、电子产品"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/textDark" >
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/_Search"
+        style="@style/BigRedButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:text="搜索" />
+
+    <com.origamilabs.library.views.StaggeredGridView
+        android:id="@+id/gl_list"
+        style="@style/MingYuGridViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp"
+        staggered:drawSelectorOnTop="true"
+        staggered:numColumns="2" />
+
+</LinearLayout>

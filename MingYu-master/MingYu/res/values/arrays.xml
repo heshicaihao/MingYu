@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="card_type">
+        <item>喜悦卡</item>
+        <item>诚悦卡</item>
+        <item>优悦卡</item>
+        <item>尊悦卡</item>
+    </string-array>
+    <string-array name="GiftTypeName">
+        <item>商务旅行</item>
+        <item>时尚生活</item>
+        <item>明宇酒店产品</item>
+        <item>会员礼券</item>
+        <item>数码家电 </item>
+        <item>明宇订制礼品</item>
+        <item>杂志期刊</item>
+    </string-array>
+    <string-array name="GiftTypeCode">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>BN</item>
+        <item>FH</item>
+        <item>HM</item>
+        <item>HY</item>
+        <item>JF</item>
+        <item>MY</item>
+        <item>SP</item>
+    </string-array>
+
+    <array name="minpoint">
+        <item>""</item>
+        <item>"1"</item>
+        <item>"1000"</item>
+        <item>"2000"</item>
+        <item>"3000"</item>
+        <item>"4000"</item>
+        <item>"5000"</item>
+        <item>"6000"</item>
+        <item>"7000"</item>
+        <item>"8000"</item>
+        <item>"9000"</item>
+        <item>>10000</item>
+    </array>
+    <array name="maxpoint">
+        <item>""</item>
+        <item>"999"</item>
+        <item>"1999"</item>
+        <item>"2999"</item>
+        <item>"3999"</item>
+        <item>"4999"</item>
+        <item>"5999"</item>
+        <item>"6999"</item>
+        <item>"7999"</item>
+        <item>"8999"</item>
+        <item>"9999"</item>
+        <item>""</item>
+    </array>
+
+</resources>

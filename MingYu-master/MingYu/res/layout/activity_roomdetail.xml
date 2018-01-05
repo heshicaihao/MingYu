@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:background="#efecec"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    
+
+    <ScrollView
+        style="@style/ContentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_title" >
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <Gallery
+                    android:id="@+id/hoteldetail_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spacing="10dp"
+                    android:unselectedAlpha="7.0" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="酒店名称：明宇丽雅饭店(中国成都)" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:text="酒店简介：成都明宇丽雅饭店是明宇集团投资并经营管理的一家豪华精品商务酒店，地处成都市中心天府广场东侧，紧邻地铁枢纽站和春熙路商业休闲街。 饭店建筑为简欧风格，端庄贵气，雍容华丽。设置于酒店顶层的空中大堂更以其卓尔不凡的靓丽品质及无可复制的景观效果开启了中国大西南酒店之先河" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地    址：中国四川省成都市人民东路59号" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="电    话：86-28-86006666" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="传    真：86-28-86651515" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <include layout="@layout/title_functionbar" />
+
+</LinearLayout>

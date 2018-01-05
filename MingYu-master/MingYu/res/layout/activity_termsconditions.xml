@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:background="#efecec"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_sharowbg"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/terms" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tc_MemberShip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/white_sharowbg"
+           android:drawableRight="@drawable/t_rightarr"
+            android:padding="10dp"
+            android:text="会员资格与等级" />
+
+        <TextView
+            android:id="@+id/tc_NoticeForUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_sharowbg"
+           android:drawableRight="@drawable/t_rightarr"
+            android:padding="10dp"
+            android:text="会员卡使用须知" />
+
+        <TextView
+            android:id="@+id/tc_ExpenseTip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_sharowbg"
+           android:drawableRight="@drawable/t_rightarr"
+            android:padding="10dp"
+            android:text="消费提示" />
+
+        <TextView
+            android:id="@+id/tc_InteRule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/white_sharowbg"
+           android:drawableRight="@drawable/t_rightarr"
+            android:padding="10dp"
+            android:text="积分规则" />
+    </LinearLayout>
+
+    <include layout="@layout/title_functionbar" />
+
+</LinearLayout>

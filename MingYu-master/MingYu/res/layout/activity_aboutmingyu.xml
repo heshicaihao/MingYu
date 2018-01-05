@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efecec"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_functionbar" />
+
+    <ScrollView
+        style="@style/MingYuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/t_aboutimg" />
+
+            <TextView
+                android:id="@+id/my_News"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="最新资讯" />
+
+            <TextView
+                android:id="@+id/my_GroupIntro"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="集团介绍" />
+
+            <TextView
+                android:id="@+id/my_BrandIntro"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="品牌介绍" />
+
+            <TextView
+                android:id="@+id/my_EnterpriseCulture"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="企业文化" />
+
+            <TextView
+                android:id="@+id/my_Join"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="招商加盟" />
+
+            <TextView
+                android:id="@+id/my_ContactUs"
+                style="@style/AboutMYStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/t_rightarr"
+                android:text="联系我们" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

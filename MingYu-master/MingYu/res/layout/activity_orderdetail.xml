@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:background="#efecec"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+
+    
+
+    <ScrollView
+        style="@style/ContentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/home_title" >
+
+        <TableLayout
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒店信息"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒店名称：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="明宇东方花园酒店" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="南充市高坪区明宇路1号" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="86 817355999" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="传真：" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="86 817355999" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒店信息"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="入住日期：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2013-8-1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="入住日期：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2013-8-2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="房间数：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="成人数：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="儿童数：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="首晚房价：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6113.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="房间类型：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="豪华双床房（低楼层城景）" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="服务费：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="222" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="税款：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="61.00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全部费用：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="538.00" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入住信息"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="称谓：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="先生" />
+            </TableRow>
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="姓：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="网" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="名：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="策" />
+            </TableRow>
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="邮箱：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="1111111@qq.com" />
+            </TableRow>
+
+            <TableRow
+                android:paddingLeft="10dp"
+                android:weightSum="4" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="手机：" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="13125433444" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="担保信息"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="未担保-酒店将保留房间直至入住当日酒店当地时间的下午6：00" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="酒店将保留预订直至酒店当地时间的下午6：00点。除非在登记入住之前提供信用卡，否则酒店将于当地时间的下午6：00点后取消预订。" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="特殊要求"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="暂无特殊要求" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/od_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交" />
+        </TableLayout>
+    </ScrollView>
+
+    <include layout="@layout/title_functionbar" />
+
+</LinearLayout>

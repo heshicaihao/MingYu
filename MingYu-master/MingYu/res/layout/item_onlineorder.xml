@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efecec"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_functionbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/t_menuimg" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/t_hotel" />
+
+                <TextView
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="国家:" />
+
+                <TextView
+                    android:id="@+id/onOrder_Country"
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/t_rightarr"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="中国" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/t_hotel" />
+
+                <TextView
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="城市:" />
+
+                <TextView
+                    android:id="@+id/onOrder_City"
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/t_rightarr"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="BeiJing" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/onOrder_InTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/dark_TitleTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/t_time"
+                        android:gravity="center"
+                        android:text="入住" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/onOrder_InTimeDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="05"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:id="@+id/onOrder_InTimeMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="星期四\n六月\n2014年"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/onOrder_OutTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/dark_TitleTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/t_time"
+                        android:gravity="center"
+                        android:text="离店" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:id="@+id/onOrder_OutTimeDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="06"
+                            android:textSize="50sp" />
+
+                        <TextView
+                            android:id="@+id/onOrder_OutTimeMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="星期四\n六月\n2014年"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/onOrder_Business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_bussiness" />
+
+                <EditText
+                    android:id="@+id/onOrder_KeyWord"
+                    style="@style/ContentEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="酒店、地标、商业圈"
+                    android:singleLine="true"
+                    android:textColor="@color/textDark" >
+                </EditText>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/item_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:clipChildren="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RadioButton
+                    android:id="@+id/item_ID_nomember"
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/style_button_subject"
+                    android:gravity="left|center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="@string/no_member" />
+
+                <RadioButton
+                    android:id="@+id/item_ID_member"
+                    style="@style/dark_TitleTextViewStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/style_button_subject"
+                    android:gravity="left|center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:singleLine="true"
+                    android:text="@string/member" />
+
+                <!-- <RadioButton -->
+                <!-- android:id="@+id/item_ID_agreement" -->
+                <!-- style="@style/dark_TitleTextViewStyle" -->
+                <!-- android:layout_width="0dp" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:background="@null" -->
+                <!-- android:button="@null" -->
+                <!-- android:drawableLeft="@drawable/style_button_subject" -->
+                <!-- android:gravity="left|center" -->
+                <!-- android:paddingBottom="5dp" -->
+                <!-- android:paddingTop="5dp" -->
+                <!-- android:singleLine="true" -->
+                <!-- android:text="@string/user_agreement" /> -->
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/onOrder_Member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/onOrder_CardType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/choose_cardtype" />
+
+                    <TextView
+                        android:id="@+id/onOrder_choiceCardType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="选择卡类型"
+                        android:textColor="@color/textDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/onOrder_CardNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/cardnum" />
+
+                    <EditText
+                        android:id="@+id/onOrder_CardNum"
+                        style="@style/ContentEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="请输入卡号"
+                        android:textColor="@color/textDark" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/onOrder__Psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/password" />
+
+                    <EditText
+                        android:id="@+id/onOrder_Psw"
+                        style="@style/ContentEditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:hint="请输入密码"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textDark" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/onOrder_Agreement" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_margin="10dp" -->
+            <!-- android:visibility="gone" > -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/TitleTextViewStyle" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="match_parent" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:gravity="center_vertical" -->
+            <!-- android:text="@string/agreement_num" /> -->
+
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/onOrder_ProtocolNum" -->
+            <!-- style="@style/ContentEditTextStyle" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:hint="请输入协议号" -->
+            <!-- android:textColor="@color/textDark" /> -->
+            <!-- </LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/onOrder_Order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ec4849"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/t_search" />
+
+                <TextView
+                    style="@style/BigRedButtonStyleSuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5sp"
+                    android:text="查询预订" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/onOrder_CheckOrder"
+                style="@style/dark_TitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/t_rightarr"
+                android:padding="10dp"
+                android:text="查看/更改预订" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
